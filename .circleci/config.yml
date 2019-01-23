@@ -8,11 +8,11 @@ workflows:
     jobs:
       - hello/hello-build
 
-version 2:
+version: 2
 jobs:
   build:
     docker:
       - image: circleci/node:4.8.2
     steps:
-      - checkout:
+      - checkout
       - run: echo "Hello World!"
